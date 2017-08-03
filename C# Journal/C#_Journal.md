@@ -41,6 +41,13 @@ To make a variable:
 var dayne = "dayne";
 ```
 
+How to do a constant string:
+
+A constant works exactly the same as string variable but there is one difference and that is a constant value never changes.
+```
+const string a = "This is the value";
+```
+
 How to do a varaible scope in C#:
 ```
 var a = 10;
