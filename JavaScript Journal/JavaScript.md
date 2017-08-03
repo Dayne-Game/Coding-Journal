@@ -22,6 +22,8 @@ To keep adding new changes to GitHub:
 2. git commit -m "Your Commit Message"
 3. git push origin master
 
+>*Note to self < is smaller than and > is greater than
+
 How to make a variable:
 ```
 var a = "This is the value"
@@ -46,7 +48,7 @@ document.writeLine("The value for variable a is now "+ a) //This will return a v
 document.writeLine("The value for variable b is now "+ b) //This will also work
 ```
 
-Variabel scope using let instead of var:
+Variable scope using let instead of var:
 ```
 let a = 10;
 
