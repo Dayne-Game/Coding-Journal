@@ -27,6 +27,8 @@ To keep adding new changes to GitHub:
 2. git commit -m "Your Commit Message"
 3. git push origin master
 
+>*Note to self < is smaller than and > is greater than
+
 C# Variables
 
 To make a user input variable:
@@ -38,3 +40,19 @@ To make a variable:
 ```
 var dayne = "dayne";
 ```
+
+How to do a varaible scope in C#:
+```
+var a = 10;
+
+if (a <= 10 )
+{
+    var b = 10;
+    a += b;
+    Console.WriteLine($"The new value of a = {a}");
+}
+
+Console.WriteLine($"The value for variable a is now {a}"); //This will return a value
+Console.WriteLine($"The value for variable b is now {b}"); //This will produce an error
+```
+Variables genrally can be used in the block that they are declared in and deeper, but not outside of that block.
