@@ -36,5 +36,5 @@ var UserInput = Console.ReadLine();
 
 To make a variable:
 ```
-var dayne = "dayne"
+var dayne = "dayne":
 ```
