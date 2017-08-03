@@ -24,6 +24,11 @@ To keep adding new changes to GitHub:
 
 >*Note to self < is smaller than and > is greater than
 
+>*This is how you link your javascript file with your HTML:
+```
+ <script src="script.js"></script>
+ ```
+
 How to make a variable:
 ```
 var a = "This is the value"
