@@ -6,6 +6,7 @@ How to add files to github
 3. cd (name of folder created)
 4. dotnet new console
 5. code .
+6. Use ctrl ` (backtick) to open the intergrated terminial
 
 To run your project go:
 1. dotnet restore
