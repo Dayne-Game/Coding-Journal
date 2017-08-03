@@ -22,6 +22,12 @@ To keep adding new changes to GitHub:
 2. git commit -m "Your Commit Message"
 3. git push origin master
 
+How to make a variable:
 ```
-WriteLine("Hello World");
+var a = "This is the value"
+```
+
+How to make a constant (constants cannot be changed)
+```
+const a = "This is the value"
 ```
