@@ -20,7 +20,7 @@ To commit your files to git hub:
 4. git remote add origin (url without brackets)
 5. git push origin master
 
-*PLEASE NOTE THAT YOU DON'T PUT THE URL IN EVERYTIME YOU ONLY DO IT ONCE*
+>*PLEASE NOTE THAT YOU DON'T PUT THE URL IN EVERYTIME YOU ONLY DO IT ONCE*
 
 To keep adding new changes to GitHub:
 1. git add .
