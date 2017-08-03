@@ -25,4 +25,16 @@ To commit your files to git hub:
 To keep adding new changes to GitHub:
 1. git add .
 2. git commit -m "Your Commit Message"
-3. git puysh origin master
+3. git push origin master
+
+C# Variables
+
+To make a user input variable:
+```
+var UserInput = Console.ReadLine();
+```
+
+To make a variable:
+```
+var dayne = "dayne"
+```
