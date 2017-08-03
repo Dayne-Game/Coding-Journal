@@ -31,3 +31,32 @@ How to make a constant (constants cannot be changed)
 ```
 const a = "This is the value"
 ```
+How to do a varaible scope:
+```
+var a = 10;
+
+if (a <= 10 )
+{
+    var b = 10;
+    a += b;
+    document.WriteLine("The new value of a = " + a)
+}
+
+document.writeLine("The value for variable a is now "+ a) //This will return a value
+document.writeLine("The value for variable b is now "+ b) //This will also work
+```
+
+Variabel scope using let instead of var:
+```
+let a = 10;
+
+if (a <= 10 )
+{
+    let b = 10;
+    a += b;
+    document.WriteLine("The new value of a = " + a)
+}
+
+document.writeLine("The value for variable a is now "+ a) //This will return a value
+document.writeLine("The value for variable b is now "+ b) //This will no longer work
+```
