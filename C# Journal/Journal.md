@@ -93,7 +93,7 @@ else
     <-- Execute if it is False
 }
 ```
-With JavaScript there are two different types. The first one is if you use == (2 equals) it will only check the value together. But if you use (3 equals) === it checks the value and what it is e.g. variable, interger etc.
+With JavaScript there are two different types. The first one is if you use == (2 equals) it will only check the value together. But if you use (3 equals) === it checks the value and the type e.g. variable, interger etc.
 
 JavaScript Example 1 (2 equals):
 ---
@@ -106,7 +106,7 @@ else {
     //Execute the else block
 }
 ```
-This statement is true because the values are both the same.
+This statement is true because the values are both the same and doesn't check the type.
 
 JavaScript Example 2 (3 equals):
 ---
@@ -119,6 +119,6 @@ else {
     //Execute the else block
 }
 ```
-This is going to be false because one number is in quotation marks and the other number isn't.
+This is going to be false because it is checking the value and the type and the type isn't the same.
 
 ---
