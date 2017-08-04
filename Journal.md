@@ -30,6 +30,16 @@ To keep adding new changes to GitHub:
 2. git commit -m "Your Commit Message"
 3. git push origin master
 
+# Operators
+These are used for mathmatical equations.
+
+1. (+) - add (addition)
+2. (-) - Subtract (Subtraction)
+3. (<) - Smaller than
+4. (>) - greater than
+5. (*) - Multiply
+6. (/) - Divide
+---
 # Variables
 A variable is a name for a value, so that we can reference to a word rather than a value
 
