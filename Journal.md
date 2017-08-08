@@ -16,6 +16,22 @@ How to access GitHub:
 2. dotnet build
 3. dotnet run
 
+>*How to create a .gitignore file*
+1. when you are in visual Code. 
+2. Create a new file called .gitignore
+3. Then type it in like this:
+```
+obj/
+bin/
+.vscode/
+.DS_Store
+```
+4. Save The file.
+
+>*How to clone your project:*
+1. Open your intergrated terminal (ctrl `)
+2. Type in git clone url (get the URL off your GitHub folder you want to clone)
+
 >*To commit your files to git hub:*
 1. Go to GitHub website and make a new repository
 2. git add .
@@ -132,3 +148,8 @@ else {
 This is going to be false because it is checking the value and the type and the type isn't the same.
 
 ---
+
+# Loops (C# and JavaScript)
+
+For Loop:
+-
