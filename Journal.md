@@ -223,3 +223,39 @@ for (let i = 0; i < count; i++) {
 Do Loop
 -
 A do loop is a loop that will go on repeatedly until the user (you) closes the loop or the loop finds false then stops. Does check condition before entering, runs at least once.
+
+C# Example:
+```c#
+bool keepgoing = true;
+
+do
+{
+    Console.WriteLine("I am going to get a drink soon!");
+    Console.WriteLine("Do you want to keep going?y/n");
+    string response = Console.ReadLine();
+    if (response == "n")
+    {
+        keepgoing = false;
+    }
+}
+while (keepgoing == true);
+{
+    Console.Readline();
+}
+```
+
+JavaScript Example:
+-
+```js
+let counter = 5;
+let index = 0;
+
+ do {
+
+    let a = i + 1;
+    console.log("This is line number " + a);
+
+    i++
+
+}while(index < counter);
+```
