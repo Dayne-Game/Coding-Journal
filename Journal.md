@@ -113,7 +113,8 @@ JavaScript Example:
 console.log("Hello World");
 ```
 # If and Else Statements
-These are used in C# and JavaScript as well as most other coding languages. An if and else statment cheaks to see if the statement is true or false.
+An if statement (also known as an if else statement) is a statement that identifies what statement to run based on the value of a Boolean expression. If the Boolean statement is true it will run through the if statement and if the statement is false it will run through the else statement.
+
 
 C# Example:
 ---
@@ -161,6 +162,36 @@ This is going to be false because it is checking the value and the type and the 
 
 For Loop:
 -
+Well by using a for loop you can run a statement (you don’t have to use just one statement you can use as many statements as you want). A for loop will run repeatedly until a specified expression evaluates to false.
+
+C# Example:
+-
+```c#
+var counter = 12;
+var tables = 1;
+
+
+for (var i = 0; i < counter; i++)
+{
+var a = i + 1;
+Console.WriteLine($"{a} x {tables} = {a * tables}");
+}
+/* Output:
+1 x 1 = 1
+2 x 1 = 2
+3 x 1 = 3
+4 x 1 = 4
+5 x 1 = 5
+6 x 1 = 6
+7 x 1 = 7
+8 x 1 = 8
+9 x 1 = 9
+10 x 1 = 10
+11 x 1 = 11
+12 x 1 = 12
+*/
+```
+
 JavaScript Example:
 -
 ```JS
@@ -173,4 +204,22 @@ for (let i = 0; i < count; i++) {
     console.log(a + "x" + tables + "=" + (a * tables));
 
 }
+/* Output:
+1x5=5
+2x5=10
+3x5=15
+4x5=20
+5x5=25
+6x5=30
+7x5=35
+8x5=40
+9x5=45
+10x5=50
+11x5=55
+12x5=60
+*/
 ```
+
+Do Loop
+-
+A do loop is a loop that will go on repeatedly until the user (you) closes the loop or the loop finds false then stops. Does check condition before entering, runs at least once.
