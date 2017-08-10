@@ -78,6 +78,19 @@ JavaScript Variable:
 var name = "Dayne"
 ```
 ---
+# User Input
+
+C# Example:
+-
+```c#
+var userInput = Console.ReadLine();
+```
+JavaScript Example:
+-
+```JS
+var person = prompt("Please enter your name", "Harry Potter");
+```
+
 # Constants
 A constant works the same way as a variable. But a constant value can't be changed.
 
@@ -259,3 +272,44 @@ let index = 0;
 
 }while(index < counter);
 ```
+
+While Loop
+-
+A while loop is a control flow statement that goes on repeatedly based on a given Boolean condition. The loop can also be known as a repeating if statement.
+
+C# Example:
+-
+```C#
+while (count < 3)
+{
+    Random rnd = new Random();
+    int result = rnd.Next(0,2);
+
+    if (result == 1)//if the result is 1 it will show tails
+    {
+        Console.WriteLine("Tails");
+        count = count + 1;
+    }
+    else
+    {
+        Console.WriteLine("Heads");
+        count = count + 1;
+    }
+
+    Console.ReadLine();
+}
+```
+
+JavaScript Example:
+-
+```js
+let counter = 5;
+let index = 0;
+
+while(index < counter) {
+
+    let a = index + 1;
+    console.log("This is line number " + a);
+
+    index++
+}
