@@ -168,6 +168,30 @@ JavaScript Example:
 ```js
 console.log("Hello World");
 ```
+---
+# Boolean 
+A boolean holds a value of true or false. A boolean in javascript can be a var or let.
+
+C# Example (using a do loop example):
+-
+```C#
+bool keepgoing = true;
+
+do
+{
+    Console.WriteLine("I am going to get a drink soon!");
+    Console.WriteLine("Do you want to keep going? y/n");
+    string response = Console.ReadLine();
+
+    if (response == "n")
+        keepgoing = false;
+}
+while (keepgoing == true);
+
+Console.ReadLine();
+```
+
+
 # If and Else Statements
 An if statement (also known as an if else statement) is a statement that identifies what statement to run based on the value of a Boolean expression. If the Boolean statement is true it will run through the if statement and if the statement is false it will run through the else statement.
 
@@ -303,17 +327,15 @@ while (keepgoing == true);
 JavaScript Example:
 -
 ```js
-let counter = 5;
-let index = 0;
+var drink = function() { // Write your do/while loop here! 
+    var choice = "y";
+    do {
 
- do {
+        choice = prompt("I am going to get a drink soon! Do you want me to keep going? y/n");
 
-    let a = i + 1;
-    console.log("This is line number " + a);
-
-    i++
-
-}while(index < counter);
+    } while (choice != "n");
+};
+drink()
 ```
 
 While Loop
