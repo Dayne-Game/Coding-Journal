@@ -681,4 +681,178 @@ Javascript makes use of the functions parseInt(string) and parseFloat(string) to
 var input1 = "32"; //this is a string
 var number1 = parseint(input1); //this is now a number
 ```
+Just some applications:
+```js
+alert("Welcome to the KM and Miles Converter!")
+
+var MILES = "MILES"
+var KM = "KM"
+var userinput = prompt("Please Enter KM to convert KM to miles or enter MILES to convert miles to KM", "ENTER");
+
+if (userinput === KM) {
+    var userinput1 = prompt("Enter how many KM you want to convert to miles!")
+    var answer = userinput1 * 0.62137119
+
+    alert("The miles are " + answer)
+
+} else if (userinput = MILES) {
+    var userinput2 = prompt("Please enter the amount of miles")
+    var answer2 = userinput2 * 1.609344
+
+    alert("The kilometres are " + answer2)
+}
+
+let txt;
+
+let keepgoing = true;
+let NO = "n";
+do {
+
+
+    let response = prompt("I am going to get a drink soon! Do you want me to keep going? y/n")
+
+    if (response === NO) {
+        keepgoing = false
+    }
+
+
+
+} while (keepgoing == true);
+console.log(txt);
+```
+That was a miles to KM converter on JavaScript.
+
+Console App C#:
+```C#
+bool keepgoing = true;
+            do
+            {
+
+                Console.WriteLine("Welcome to the Metric System Conversion 2.0");
+                Console.WriteLine("");
+                Console.WriteLine("Enter the code for what you want to convert");
+                Console.WriteLine("");
+                Console.WriteLine("Pounds to Kilograms           Code: PTK");
+                Console.WriteLine("Inches to Centremeters        Code: ITC");
+                Console.WriteLine("Yards to Meters               Code: YTM");
+                Console.WriteLine("Miles to Kilometres           Code: MTK");
+                Console.WriteLine("Centimetres to Feet/Foot      Code: CTF");
+                Console.WriteLine("Feet to Centimetres           Code: FTC");
+                Console.WriteLine("Kilograms to Pounds           Code: KTP");
+                Console.WriteLine("");
+                Console.WriteLine("WANT TO QUIT? JUST TYPE IN THIS CODE       Code: Q");
+				Console.WriteLine("");
+                Console.Write("Enter Code:");
+
+                String UserInput = Console.ReadLine();
+                String PTK = "PTK";
+                String ITC = "ITC";
+                String YTM = "YTM";
+                String MTK = "MTK";
+                String QUIT = "Q";
+                String CTF = "CTF";
+                string FTC = "FTC";
+                string KTP = "KTP";
+
+
+                if (UserInput == PTK)
+                {
+
+
+                    Console.WriteLine("Enter the number of pounds to convert to Kilograms:");
+                    double number = double.Parse(Console.ReadLine());
+                    double convertedNumber = Math.Round(number / 2.2046, 2);
+					Console.WriteLine("");
+                    Console.WriteLine($"{convertedNumber}KG");
+					Console.WriteLine("");
+                    Console.WriteLine("PRESS ENTER TO DO ANOTHER CALCULATION OR PRESS ENTER THEN TYPE Q TO QUIT THE APP");
+                    Console.ReadLine();
+                }
+                else if (UserInput == KTP)
+                {
+					Console.WriteLine("Enter the number of Kilograms to convert to Pounds:");
+					double number = double.Parse(Console.ReadLine());
+					double convertedNumber = Math.Round(number * 2.2046, 2);
+					Console.WriteLine("");
+					Console.WriteLine($"{convertedNumber}lb");
+					Console.WriteLine("");
+					Console.WriteLine("PRESS ENTER TO DO ANOTHER CALCULATION OR PRESS ENTER THEN TYPE Q TO QUIT THE APP");
+					Console.ReadLine(); 
+                }
+                else if (UserInput == ITC)
+                {
+
+
+                    Console.WriteLine("ENTER THE NUMBER OF INCHES TO CONVERT TO CENTREMETRES:");
+                    double number = double.Parse(Console.ReadLine());
+                    double convertedNumber = Math.Round(number * 2.54, 2);
+					Console.WriteLine("");
+                    Console.WriteLine($"{convertedNumber}CM");
+					Console.WriteLine("");
+                    Console.WriteLine("PRESS ENTER TO DO ANOTHER CALCULATION OR PRESS ENTER THEN TYPE Q TO QUIT THE APP");
+                    Console.ReadLine();
+                }
+                else if (UserInput == QUIT)
+                {
+                    keepgoing = false;
+                    Console.WriteLine("THANK YOU FOR THE METRIC SYSTEM 2.0 APPLICATION PRESS ENTER TO CLOSE");
+                }
+                else if (UserInput == FTC)
+                {
+                    Console.WriteLine("ENTER THE NUMBER OF FEET TO CONVERT TO CENTIMETRES");
+                    double number = double.Parse(Console.ReadLine());
+                    double covertedNumber = Math.Round(number / 0.0328084, 1);
+                    Console.WriteLine("");
+                    Console.WriteLine($"{covertedNumber}'");
+                    Console.WriteLine("");
+					Console.WriteLine("PRESS ENTER TO DO ANOTHER CALCULATION OR PRESS ENTER THEN TYPE Q TO QUIT THE APP");
+					Console.ReadLine();
+                }
+                else if (UserInput == CTF)
+                {
+                    Console.WriteLine("ENTER THE NUMBER OF CENTIMETRES TO FEET");
+                    double number = double.Parse(Console.ReadLine());
+                    double convertedNumber = Math.Round(number * 0.0328084, 1);
+                    Console.WriteLine("");
+                    Console.WriteLine($"{convertedNumber}'");
+                    Console.WriteLine("");
+                    Console.WriteLine("PRESS ENTER TO DO ANOTHER CALCULATION OR PRESS ENTER THEN TYPE Q TO QUIT THE APP");
+                    Console.ReadLine();
+                }
+                else if (UserInput == YTM)
+                {
+                    Console.WriteLine("ENTER THE NUMBER OF YARDS TO CONVERT TO METRES:");
+                    double number = double.Parse(Console.ReadLine());
+                    double convertedNumber = Math.Round(number * 0.9144, 2);
+					Console.WriteLine("");
+                    Console.WriteLine($"{convertedNumber}M");
+					Console.WriteLine("");
+                    Console.WriteLine("PRESS ENTER TO DO ANOTHER CALCULATION OR PRESS ENTER THEN TYPE Q TO QUIT THE APP");
+                    Console.ReadLine();
+                }
+                else if (UserInput == MTK)
+                {
+                    Console.WriteLine("ENTER THE NUMBER OF MILES TO KILOMETRES:");
+                    double number = double.Parse(Console.ReadLine());
+                    double convertedNumber = Math.Round(number * 1.60934, 2);
+                    Console.WriteLine("");
+                    Console.WriteLine($"{convertedNumber}KM");
+                    Console.WriteLine("");
+                    Console.WriteLine("PRESS ENTER TO DO ANOTHER CALCULATION OR PRESS ENTER THEN TYPE Q TO QUIT THE APP");
+                    Console.ReadLine();
+                }
+                else
+                {
+                    Console.WriteLine("");
+                    Console.WriteLine("INCORRECT CODE!");
+                    Console.WriteLine("");
+
+                }
+
+            }
+            while (keepgoing == true);
+            {
+                Console.ReadLine();
+            }
+```
 
