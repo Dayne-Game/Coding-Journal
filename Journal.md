@@ -378,3 +378,307 @@ while(index < counter) {
 
     index++
 }
+```
+---
+# NaN as a result of a loop:
+NaN stands for not a number:
+
+```js
+var multiples = [1064, 256, 374, 102, "sheep", "camel"];
+var newArray = [];
+for (var i = 0; i < multiples.length; i++) {
+//checking if it is a number
+ if (!isNaN(multiples[i])) 
+  {  
+     console.log(multiples[i])  //showing us the number
+     newArray[i] = multiples[i] //add numbers to a new array
+  }
+}
+console.log("Only Numbers - ", newArray)
+```
+---
+#  JavaScript Array 
+Arrays work also very similar in Javascript, but there are no lists.
+
+Create a new array:
+-
+```js
+var multiples = [1064, 256, 374, 102, "sheep", "camel"];
+```
+The VIP Reference:
+-
+```js
+var multiples = [1064, 256, 374, 102, "sheep", "camel"]; [v] (value)
+index =            0    1    2    3      4        5      [i] (index)
+position =       1st   2nd  3rd  4th    5th      6th     [p] (position)
+```
+Some extra JavaScript Methods:
+-
+```js
+var multiples = [1064, 256, 374, 102, "sheep", "camel"];
+var firstItem = multiples[0];     //1064
+var length = multiples.length     //6
+var allItems = multiples.join()   //"1064,256,374,102,sheep,camel"
+var sorting = multiples.sort()    //102, 1064, 256, 374, "camel", "sheep"
+var reverse = multiples.reverse() //"camel", "sheep", 102, 374, 256, 1064
+```
+Adding Items into an Array:
+-
+Adding to the end of the Array:
+-
+```js
+var newLength = multiples.push('horse');
+// [1064, 256, 374, 102, "sheep", "camel", "horse"]
+```
+Removing the last item of the array:
+-
+```js
+var last = multiples.pop(); // remove "camel" (from the end)
+```
+Finding a position of an item in an array:
+-
+```js
+var pos = multiples.indexOf('camel'); //5
+```
+---
+# C# Arrays and Lists
+```c#
+public static void Main(string[] args)
+{
+    //Create an Array
+    var a = new string[6] {"Apples", "Cherry", "Bannana", "Tomato", "Oranges", "Mandarin"};
+
+    //Sort the Array in Alphabetical Order
+    Array.Sort(a);
+
+    //Print the Array to the screen
+    Console.WriteLine(string.Join(",", a));
+
+    //Output
+    //Apples, Banana, Cherry, Mandarin, Oranges, Tomato
+}
+```
+Arrays can also be displayed backwards:
+-
+```c#
+public static void Main(string[] args)
+{
+    //Create an Array
+    var a = new string[6] {"Apples", "Cherry", "Bannana", "Tomato", "Oranges", "Mandarin"};
+
+    //Sort the Array in Alphabetical Order
+    Array.Reverse(a);
+
+    //Print the Array to the screen
+    Console.WriteLine(string.Join(",", a));
+
+    //Output
+    //Mandarin, Oranges, Tomato, Banana, Cherry, Apples
+}
+```
+Just change Array.Sort(a); to Array.Reverse(a);
+
+Sorting in reverse (Alphabetical)
+-
+```c#
+public static void Main(string[] args)
+{
+    //Create an Array
+    var a = new string[6] {"Apples", "Cherry", "Bannana", "Tomato", "Oranges", "Mandarin"};
+
+    //Sort the Array in Alphabetical Order
+    Array.Sort(a);
+    Array.Reverse(a);
+
+    //Print the Array to the screen
+    Console.WriteLine(string.Join(",", a));
+
+    //Output
+    //Tomato, Oranges, Mandarin, Cherry, Banana, Apples
+}
+```
+Array values can be printed in a loop or using string methods
+-
+```C#
+public static void Main(string[] args)
+{
+    //Create an Array
+    var a = new string[6] {"Apples", "Cherry", "Bannana", "Tomato", "Oranges", "Mandarin"};
+    
+    //Print the Array as a string
+    var output = string.Join(",", a);
+
+    //Print the Array to the screen
+    Console.WriteLine(output);
+
+    //Output
+    //"Apples, Cherry, Banana, Tomato, Oranges, Mandarin"
+}
+```
+Array Values can be printed in a loop or using string methods
+```C#
+public static void Main(string[] args)
+{
+    //Create an Array
+    var a = "Apples are green and taste good";
+    
+    //Print the Array as a string
+    var output = a.Split(' ');//Needs to be ' ' not " "
+
+    //Print the Array to the screen
+    Console.WriteLine(output[2]);
+
+    //Output
+    //"green"
+}
+```
+To define an array we use the keyword var.
+
+1. Arrays hold multiple values inside a single variable
+2. Values can be sorted using Array.Sort(array name)
+
+Lists
+-
+List<T> are a very similar to arrays in terms of functionality
+
+Reference is the same, but List<T> offer more options
+
+Not having to set a length when defining them allows for adding and removing object later in the program.
+```C#
+var names = new list<string> {"bob," "Jack", "Salty"};
+
+//Arrays use .Length to display their length
+//List <T> uses the .Count to display their length
+//Both return a number, just use the right one for the right type.
+```
+```C#
+var names = new list<string> {"bob," "Jack", "Salty"};
+
+//Objects can be added and removed
+
+names.Add("Peter");
+names.Remove("bob);
+```
+```C#
+var firstname = "Carol";
+var names = new List<string> {"bob," "Jack", "Sally"};
+
+//Objects can be added and removed
+
+names.Add(firstname);
+names.Remove(firstname);
+
+names.Remove(names[2]);
+```
+Lists are single dimension arrays.
+
+Use a Tuple, if you want to take multiple parameters(new since .Net 4.0)
+```C#
+var names = new List<Tuple<string, int>>();
+names.add(Tuple.Create("bob", 32));
+
+names[0].Item1 //"bob"
+names[0].Item2 //32
+```
+# TryParse
+Sometimes we need to change the datatype so that we can do other things with our data.
+For example when doing number conversion, we cannot do this using strings.
+
+To be able convert strings to a numeric value (int, double, floats) we use the .Parse() method.
+If we want to convert a string to a whole number we would use int.Parse(string) and store that value into a variable.
+
+For a conversion to happen successfully the input from the user needs to be a number, or else you will get a value of 0 or a program crash.
+```c#
+Console.WriteLine("Please enter in a number");
+var input1 = Console.ReadLine();
+var number1 = int.Parse(input1);
+
+Console.WriteLine(number1 * 2);
+```
+Using TryParse
+-
+As the name implies, a tryParse() tries to parse the string. This is a boolean operation, which returns true or false For this we need to setup 2 variables, one that holds a number (int, double, floats) and one that holds the boolean value.
+
+```c#
+//Get input from user
+Console.WriteLine("Please enter in a number");
+var input1 = Console.ReadLine();
+
+//Check if the input from the user is a number
+var number1 = 0;
+var isNumber = int.TryParse(input1, out number1);
+
+//If the value is a number, go on with the program, or else tell the user they made an error
+if(isNumber) {
+    Console.WriteLine(number1 * 2);
+}
+else {
+    Console.WriteLine("Please type in a number next time.");
+}
+```
+
+# JavaScript Parsing
+
+To interact with data using Javascript we use alert, prompt and confirm boxes. This data can then be stored into a variable.
+
+For now we will still show information to the console, but we could display this information in a proper website as well.
+
+To display a message without any input we use an alert box:
+```js
+alert("I am an alert box!");
+```
+To deal with a simple choice input from a user we would use a confirm box. Next we would use an if statement to control what the program does next.
+```js
+var txt; 
+
+if (confirm("Press a button!") == true) {
+    txt = "You pressed OK!";
+} else {
+    txt = "You pressed Cancel!";
+}
+
+console.log(txt);
+```
+Lastly to deal with user input we would use a prompt Here the user is asked a question and that value is stored in a variable.
+```js
+var txt; 
+
+var person = prompt("Please enter your name", "Harry Potter");
+
+if (person == null || person == "") {
+    txt = "User cancelled the prompt.";
+} else {
+    txt = "Hello " + person + "! How are you today?";
+}
+
+console.log(person);
+console.log(txt);
+```
+Displaying Information Better
+-
+Javascript relies heavily on the use of functions, so that not everything happens all at once as soon as a page loads.
+
+How functions work will be explained in more detail, for now use the following code to help you out.
+```html
+<body>
+    <button onclick="trythis()">Press me!</button>  <!-- we have a button that calls a function called trythis() -->
+    <script src="scripts.js"></script>
+</body>
+```
+```js
+let trythis = () => {
+
+    /* 
+        This is an empty function, whatever code 
+        is placed in here is called when the button is clicked.
+    */
+}
+```
+Number Conversions
+-
+Javascript makes use of the functions parseInt(string) and parseFloat(string) to get a number value from a string. The functions can be linked to a variable so that the numbers can be used in calculations etc.
+```js
+var input1 = "32"; //this is a string
+var number1 = parseint(input1); //this is now a number
+```
+
