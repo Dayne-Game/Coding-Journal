@@ -907,11 +907,9 @@ namespace Task3
 var fruit = [];
 for (let i = 0; i < 5; i++) {
     fruit.push(prompt("Please enter a fruit:"))
-
-
-
-
 }
-var fruitjoin = fruit.join(', ');
-alert(fruitjoin);
+var fruitjoin = fruit.sort(', ');
+var fruitreverse = fruit.reverse(', ');
+alert("This is the fruit in asending order " + fruitjoin);
+Alert("This is the fruit in desending order " + fruitreverse);
 ```
