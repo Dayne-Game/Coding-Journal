@@ -751,8 +751,8 @@ bool keepgoing = true;
                 String MTK = "MTK";
                 String QUIT = "Q";
                 String CTF = "CTF";
-                string FTC = "FTC";
-                string KTP = "KTP";
+                String FTC = "FTC";
+                String KTP = "KTP";
 
 
                 if (UserInput == PTK)
@@ -855,7 +855,7 @@ bool keepgoing = true;
                 Console.ReadLine();
             }
 ```
-# Fruits APPLICATION JAVASCRIPT
+# Fruits APPLICATION C#
 ```js
 using System;
 using System.Collections.Generic;
