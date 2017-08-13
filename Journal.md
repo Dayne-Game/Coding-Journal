@@ -902,3 +902,16 @@ namespace Task3
     }
 }
 ```
+# JavaScriopt Application
+```js
+var fruit = [];
+for (let i = 0; i < 5; i++) {
+    fruit.push(prompt("Please enter a fruit:"))
+
+
+
+
+}
+var fruitjoin = fruit.join(', ');
+alert(fruitjoin);
+```
