@@ -913,3 +913,43 @@ var fruitreverse = fruit.reverse(', ');
 alert("This is the fruit in asending order " + fruitjoin);
 Alert("This is the fruit in desending order " + fruitreverse);
 ```
+>C# Average porogram
+```
+using System;
+
+namespace problem2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //Start the program with Clear();
+            Console.Clear();
+            
+            Console.WriteLine("Welcome to the number application");
+
+            var number = 0;
+            var counter = 10;
+
+            for (var i = 0; i < counter; i++)
+            {
+                Console.WriteLine("Please enter a number:");
+                var isNumber = int.TryParse(Console.ReadLine(), out int input);
+
+                number += input;
+            }
+            System.Console.WriteLine();
+            Console.WriteLine($"The total number is {number}");
+            System.Console.WriteLine();
+            System.Console.WriteLine($"The average is {number / counter}");
+            Console.ReadLine();
+
+             //End the program with blank line and instructions
+            Console.ResetColor();
+            Console.WriteLine();
+            Console.WriteLine("Press <Enter> to quit the program");
+            Console.ReadKey();
+        }
+    }
+}
+```
