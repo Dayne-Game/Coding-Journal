@@ -970,3 +970,65 @@ for (let i = 0; i < counter; i++) {
 console.log("The total number is = " + number);
 console.log("The average of the total = " + number / counter);
 ```
+C# APP
+```c#
+ //Start the program with Clear();
+            Console.Clear();
+            
+            
+            
+            bool keepgoing = true;
+
+            do {
+            var number = 0;
+
+            Console.WriteLine("Please type in a number:");
+
+            var isNumber = int.TryParse(Console.ReadLine(), out number);
+
+            if(isNumber) 
+            {
+                keepgoing = false;
+                Console.WriteLine($"The number is {number}");
+                 //End the program with blank line and instructions
+            Console.ResetColor();
+            Console.WriteLine();
+            Console.WriteLine("Press <Enter> to quit the program");
+            Console.ReadKey();
+            }
+            }
+            while (keepgoing == true);
+            {
+                Console.WriteLine("You didn't enter a number");
+            }
+            ```
+            
+            >C# Average APP
+            ```c#
+             //Start the program with Clear();
+            Console.Clear();
+            
+            Console.WriteLine("Welcome to the number application");
+
+            var number = 0;
+            var counter = 10;
+
+            for (var i = 0; i < counter; i++)
+            {
+                Console.WriteLine("Please enter a number:");
+                var isNumber = int.TryParse(Console.ReadLine(), out int input);
+
+                number += input;
+            }
+            System.Console.WriteLine();
+            Console.WriteLine($"The total number is {number}");
+            System.Console.WriteLine();
+            System.Console.WriteLine($"The average is {number / counter}");
+            Console.ReadLine();
+
+             //End the program with blank line and instructions
+            Console.ResetColor();
+            Console.WriteLine();
+            Console.WriteLine("Press <Enter> to quit the program");
+            Console.ReadKey();
+            ```
