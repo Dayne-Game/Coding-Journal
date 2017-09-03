@@ -913,7 +913,7 @@ var fruitreverse = fruit.reverse(', ');
 alert("This is the fruit in asending order " + fruitjoin);
 Alert("This is the fruit in desending order " + fruitreverse);
 ```
->C# Average porogram
+>C# Average program
 ```
 using System;
 
@@ -955,7 +955,7 @@ namespace problem2
 ```
 
 
->*JavaScript Average APPLICATION*
+>JavaScript Average APPLICATION
 ```js
 let number = 0
 let counter = 10
