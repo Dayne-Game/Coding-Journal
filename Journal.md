@@ -248,13 +248,16 @@ C# Example:
 -
 ```c#
 var counter = 12;
-var tables = 1;
+var tables = Console.ReadLine();
+
+var isnumber = int.TryParse(tables, out int number1)
+
 
 
 for (var i = 0; i < counter; i++)
 {
 var a = i + 1;
-Console.WriteLine($"{a} x {tables} = {a * tables}");
+Console.WriteLine($"{a} x {number1} = {a * number1}");
 }
 /* Output:
 1 x 1 = 1
@@ -276,12 +279,14 @@ JavaScript Example:
 -
 ```JS
 let count = 12;
-let tables = 5;
+let tables = prompt("Please enter a number", "")
+
+let number1 = parseint(tables) 
 
 for (let i = 0; i < count; i++) {
 
     let a = i + 1;
-    console.log(a + "x" + tables + "=" + (a * tables));
+    console.log(a + "x" + number1 + "=" + (a * number1));
 
 }
 /* Output:
