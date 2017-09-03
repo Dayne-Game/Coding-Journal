@@ -953,3 +953,20 @@ namespace problem2
     }
 }
 ```
+
+
+>*JavaScript Average APPLICATION*
+```js
+let number = 0
+let counter = 10
+
+for (let i = 0; i < counter; i++) {
+
+    let answer = prompt("Please type in a number", "")
+
+    number += parseInt(answer)
+}
+
+console.log("The total number is = " + number);
+console.log("The average of the total = " + number / counter);
+```
