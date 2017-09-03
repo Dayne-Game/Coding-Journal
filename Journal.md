@@ -248,9 +248,11 @@ C# Example:
 -
 ```c#
 var counter = 12;
+
+             Console.WriteLine("Please enter a number:");
 var tables = Console.ReadLine();
 
-var isnumber = int.TryParse(tables, out int number1)
+var isnumber = int.TryParse(tables, out int number1);
 
 
 
@@ -259,50 +261,25 @@ for (var i = 0; i < counter; i++)
 var a = i + 1;
 Console.WriteLine($"{a} x {number1} = {a * number1}");
 }
-/* Output:
-1 x 1 = 1
-2 x 1 = 2
-3 x 1 = 3
-4 x 1 = 4
-5 x 1 = 5
-6 x 1 = 6
-7 x 1 = 7
-8 x 1 = 8
-9 x 1 = 9
-10 x 1 = 10
-11 x 1 = 11
-12 x 1 = 12
-*/
+
 ```
 
 JavaScript Example:
 -
 ```JS
 let count = 12;
-let tables = prompt("Please enter a number", "")
+let timestables = prompt("Please enter a number", "")
 
-let number1 = parseint(tables) 
+
 
 for (let i = 0; i < count; i++) {
 
+    var tables = parseInt(timestables);
+
     let a = i + 1;
-    console.log(a + "x" + number1 + "=" + (a * number1));
+    console.log(a + "x" + tables + "=" + (a * tables));
 
 }
-/* Output:
-1x5=5
-2x5=10
-3x5=15
-4x5=20
-5x5=25
-6x5=30
-7x5=35
-8x5=40
-9x5=45
-10x5=50
-11x5=55
-12x5=60
-*/
 ```
 
 Do Loop
