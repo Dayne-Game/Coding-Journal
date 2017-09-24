@@ -523,6 +523,12 @@ Lists
 -
 List<T> are a very similar to arrays in terms of functionality
 
+>Remember when using lists. You need:
+```c#
+using system.collections.generic;
+```
+at the top of the page (usually under using system).
+
 Reference is the same, but List<T> offer more options
 
 Not having to set a length when defining them allows for adding and removing object later in the program.
