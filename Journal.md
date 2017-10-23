@@ -424,7 +424,7 @@ var pos = multiples.indexOf('camel'); //5
 ```
 ---
 # C# Arrays and Lists
-```c#
+```c
 public static void Main(string[] args)
 {
     //Create an Array
@@ -1019,4 +1019,205 @@ C# APP
             Console.WriteLine();
             Console.WriteLine("Press <Enter> to quit the program");
             Console.ReadKey();
-            ```
+ ```
+# Monday Test Notes (Apart for GitHub)
+
+Random Numbers 
+
+```c
+
+using System;
+using System.Collections.Generic;
+
+namespace Random_Number_Csharp
+{
+    class Program
+    {
+        static List<string> cars = new List<string> { "Audi", "Mazda", "Toyota", "Nissan" };
+        static List<string> drivers = new List<string> { "Bob", "Lisa", "Tim", "Simon", "Kevin" };
+        static void Main(string[] args)
+        {
+            //Start the program with Clear();
+            Console.Clear();
+
+            Console.WriteLine(DisplayDriver());
+            Console.WriteLine(DisplayDriver());
+            Console.WriteLine(DisplayDriver());
+
+            //End the program with blank line and instructions
+            Console.ResetColor();
+            Console.WriteLine();
+            Console.WriteLine("Press <Enter> to quit the program");
+            Console.ReadKey();
+        }
+
+        static int GenerateRandomNumber(List<string> myList)
+        {
+            var rand = new Random();
+            return rand.Next(1, myList.Count);
+        }
+
+        static string DisplayDriver()
+        {
+
+            var selectedCar = cars[GenerateRandomNumber(cars)];
+            var selectedDriver = drivers[GenerateRandomNumber(drivers)];
+
+            //return $"{selectedDriver} is driving the {selectedCar}";
+            return $"Selected Driver = {selectedDriver}\nSelected Car = {selectedCar}";
+        }
+    }
+}
+```
+
+Classes
+
+```C
+using System;
+
+namespace Create_Classes
+{
+    class cars
+    {
+        private string _Make;
+
+        private string _Model;
+
+        private int _Year;
+
+        public string Make
+        {
+
+            set
+            {
+                _Make = value;
+
+            }
+        }
+
+        public string Model
+        {
+
+            set
+            {
+                _Model = value;
+
+            }
+        }
+
+        public int Year
+        {
+
+            set
+            {
+                _Year = value;
+
+            }
+        }
+
+        public cars(string _make, string _model, int _year)
+        {
+            Make = _make;
+            Model = _model;
+            Year = _year;
+        }
+
+        public string DisplayCar()
+        {
+            var showmycar = "The car we have created is: \n\n";
+            showmycar += $"The Make is {_Make}\n";
+            showmycar += $"The Model is {_Model}\n";
+            showmycar += $"The Year is {_Year}\n";
+
+            return showmycar;
+        }
+    }
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            var car1 = new cars("Mazda", "RX7", 1974);
+            var car2 = new cars("Mercedes-Benz", "AMG", 2011);
+            var car3 = new cars("Ford", "Model T", 1914);
+        }
+    }
+}
+```
+Methods
+```c
+using System;
+using System.Collections.Generic;
+
+namespace Methods
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //PrintToScreen();
+            //PrintNameWithParam("Jeff");
+            //PrintNameWithParam("Bob");
+            //PrintNameWithParam("Tim");
+
+            //PrintStringUsingParam("Hello my name is fuck you");
+
+            //var greeting = Greeting("Dayne");
+
+            Console.WriteLine(Calculate(2, 3, "/"));
+        }
+
+        static void PrintToScreen(){
+            Console.WriteLine("Hello my name is Dayne Game");
+        }
+
+        static void PrintNameWithParam(string name) {
+            Console.WriteLine($"Hello my name is {name}");
+        }
+
+        static void PrintStringUsingParam(string content) {
+            Console.WriteLine($"  {content}");
+        }
+
+        static string Greeting(string name) {
+
+            return $"hello my name is {name}";
+
+        }
+
+        static string Calculate(double num1, double num2, string op) {
+
+            var answer = string.Empty;
+
+            switch(op) {
+
+                case("*"):
+                    answer = $"{num1} x {num2} = {num1 * num2}";
+                break;
+
+                case("+"):
+                    answer = $"{num1} + {num2} = {num1 + num2}";
+                break;
+
+                case("/"):
+                    answer = $"{num1} / {num2} = {num1 / num2}";
+                break;
+
+                case("-"):
+                    answer = $"{num1} - {num2} = {num1 - num2}";
+                break;
+
+                default:
+                    answer = "You entered an invalid operator";
+                break;
+
+            }
+            
+            
+            
+            return answer;
+        }
+    }
+}
+```         
+     
