@@ -23,13 +23,29 @@ cd Electron-Playground
 ```
 ### Do npm install (inside folder):
 ```
-npm install
+npm init
+```
+## Creating package.json
+```
+<enter>
+<enter>
+<description of choice>
+main.js
+<enter>
+<can enter git repo or just hit enter>
+<enter>
+<Firstname and Lastname>
+<enter>
+yes
 ```
 ### Then install electron
 ```
 npm install electron --save
 ```
-### Open up your Folder
+### Open up your Folder in vscode
 ```
 code .
 ```
+---
+
+
