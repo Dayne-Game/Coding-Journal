@@ -68,7 +68,7 @@ while (keepgoing == true);
 }
 ```
 ---
-# For-each loop
+# Foreach loop
 The foreach statement executes a statement or a block of statements for each element in an instance of the type that implements the System.Collections.IEnumerable or System.Collections.Generic.IEnumerable<T> interface.
 ```c
       string[] fruits = new string[4] {"Apple", "Banana", "Coconut", "Mandarin"};
@@ -76,10 +76,11 @@ The foreach statement executes a statement or a block of statements for each ele
             foreach(var fruit in fruits) {
 
                 Console.WriteLine(fruit); 
-                
+
                 // Apple
                 // Banana
                 // Coconut
                 // Mandarin
             }
 ```
+---
